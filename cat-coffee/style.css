@@ -1,0 +1,77 @@
+body { 
+  font-family: "Source Sans Pro", "Hiragino Kaku Gothic ProN", Meiryo, Arial, sans-serif; 
+  }
+p { font-size: 15px; }
+
+body{ 
+    max-width: 1080px;   
+    margin: 0 auto 0 auto; }
+
+header { 
+    display: flex;   
+    justify-content: space-between; 
+    align-items: center; }
+
+/**ハンバーガーメニューのロゴの感覚の調整**/
+#nav-pc > a { 
+    text-decoration: none;   
+    margin-left: 40px; }
+
+#nav-pc { font-size: 14px; }
+
+#nav-pc > a:hover { 
+  text-decoration: underline; 
+  color:  #0d0d0d; 
+   text-decoration-thickness: 3px; }
+
+#main-visual { 
+  position: relative;   
+  height: 400px; }
+
+/**コーヒーを入れる画像のサイズ調整**/
+#main-visual img { 
+  width: 50%;  
+  height: auto;  
+  display: block; }
+
+#main-message {  
+  width: 50%;  
+  background-color: #0b4f59;
+  color: white;  
+  padding: 60px 40px;  
+  box-sizing: border-box; 
+  border-bottom-right-radius: 120px; }
+
+/**画像を横並びにする**/
+#main-visual {  
+  display: flex;  
+  align-items: stretch; }  
+
+ /**太字にして文字のサイズを60にする**/      
+#main-message h1 { 
+  font-size: 60px;   
+  margin-bottom: 20px;   
+  font-weight: 700; }
+
+#main-message p { 
+  font-size: 28px; 
+  margin: 8px 0; }
+
+/**親要素を position: relative;、前に出したい子要素を position: absolute; z-index: 10;にする**/
+
+#main-visual img { margin-left: auto; }
+#main-message { position: absolute; 
+                top: 0; 
+                left: 0; 
+                z-index: 10; 
+                }
+
+
+
+
+
+
+
+
+
+
